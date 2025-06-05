@@ -32,10 +32,10 @@ export function AdminDashboard() {
   ];
 
   return (
-    <div className="min-h-screen bg-background p-6">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen p-6 bg-background">
+      <div className="mx-auto max-w-7xl">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-foreground mb-2">
+          <h1 className="mb-2 text-3xl font-bold text-foreground">
             {settings.storeName} - Admin Dashboard
           </h1>
           <p className="text-muted-foreground">
@@ -43,10 +43,10 @@ export function AdminDashboard() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 gap-6 mb-8 md:grid-cols-3">
           {stats.map((stat) => (
             <Card key={stat.title}>
-              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
                 <CardTitle className="text-sm font-medium">
                   {stat.title}
                 </CardTitle>
@@ -59,16 +59,16 @@ export function AdminDashboard() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Package className="h-5 w-5" />
+                <Package className="w-5 h-5" />
                 Product Management
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-4">
+              <p className="mb-4 text-muted-foreground">
                 Add, edit, and organize your product catalog
               </p>
               <Link href="/admin/products">
@@ -82,12 +82,12 @@ export function AdminDashboard() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Settings className="h-5 w-5" />
+                <Settings className="w-5 h-5" />
                 Store Settings
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-4">
+              <p className="mb-4 text-muted-foreground">
                 Configure your store branding and WhatsApp integration
               </p>
               <Link href="/admin/settings">
@@ -108,19 +108,19 @@ export function AdminDashboard() {
               <div className="flex flex-wrap gap-4">
                 <Link href="/">
                   <Button variant="outline">
-                    <Store className="h-4 w-4 mr-2" />
+                    <Store className="w-4 h-4 mr-2" />
                     View Storefront
                   </Button>
                 </Link>
                 <Link href="/admin/products">
                   <Button variant="outline">
-                    <Package className="h-4 w-4 mr-2" />
+                    <Package className="w-4 h-4 mr-2" />
                     Add Product
                   </Button>
                 </Link>
                 <Link href="/admin/settings">
                   <Button variant="outline">
-                    <Settings className="h-4 w-4 mr-2" />
+                    <Settings className="w-4 h-4 mr-2" />
                     WhatsApp Setup
                   </Button>
                 </Link>

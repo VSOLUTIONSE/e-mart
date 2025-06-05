@@ -83,12 +83,12 @@ export function StoreSettingsForm() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Store className="h-5 w-5" />
+                <Store className="w-5 h-5" />
                 Store Information
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div>
                   <Label htmlFor="storeName">Store Name</Label>
                   <Input
@@ -133,7 +133,7 @@ export function StoreSettingsForm() {
                 />
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div>
                   <Label htmlFor="logo">Logo URL</Label>
                   <Input
@@ -162,7 +162,7 @@ export function StoreSettingsForm() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
+                <Phone className="w-5 h-5" />
                 WhatsApp Integration
               </CardTitle>
             </CardHeader>
@@ -175,7 +175,7 @@ export function StoreSettingsForm() {
                   onChange={(e) => handleInputChange('whatsappNumber', e.target.value)}
                   placeholder="+1234567890"
                 />
-                <p className="text-sm text-muted-foreground mt-1">
+                <p className="mt-1 text-sm text-muted-foreground">
                   Include country code (e.g., +1234567890)
                 </p>
               </div>
@@ -209,14 +209,14 @@ export function StoreSettingsForm() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Users className="h-5 w-5" />
+                <Users className="w-5 h-5" />
                 Social Media & Contact
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
                 <Label htmlFor="facebookUrl" className="flex items-center gap-2">
-                  <Facebook className="h-4 w-4" />
+                  <Facebook className="w-4 h-4" />
                   Facebook Page URL
                 </Label>
                 <Input
@@ -229,7 +229,7 @@ export function StoreSettingsForm() {
 
               <div>
                 <Label htmlFor="instagramUrl" className="flex items-center gap-2">
-                  <Instagram className="h-4 w-4" />
+                  <Instagram className="w-4 h-4" />
                   Instagram Profile URL
                 </Label>
                 <Input
@@ -242,7 +242,7 @@ export function StoreSettingsForm() {
 
               <div>
                 <Label htmlFor="emailContact" className="flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
+                  <Mail className="w-4 h-4" />
                   Contact Email
                 </Label>
                 <Input
@@ -261,7 +261,7 @@ export function StoreSettingsForm() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Palette className="h-5 w-5" />
+                <Palette className="w-5 h-5" />
                 Theme Customization
               </CardTitle>
             </CardHeader>
@@ -299,8 +299,8 @@ export function StoreSettingsForm() {
       </div>
 
       {/* Data Management Section */}
-      <div className="border-t pt-6">
-        <h3 className="text-lg font-medium mb-4">Data Management</h3>
+      <div className="pt-6 border-t">
+        <h3 className="mb-4 text-lg font-medium">Data Management</h3>
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <div>
@@ -315,7 +315,7 @@ export function StoreSettingsForm() {
               onClick={handleResetToDemo}
               disabled={isResetting}
             >
-              <RefreshCw className="h-4 w-4 mr-2" />
+              <RefreshCw className="w-4 h-4 mr-2" />
               Reset to Demo
             </Button>
           </div>
@@ -332,7 +332,7 @@ export function StoreSettingsForm() {
               variant="destructive"
               onClick={handleClearData}
             >
-              <Trash2 className="h-4 w-4 mr-2" />
+              <Trash2 className="w-4 h-4 mr-2" />
               Clear Data
             </Button>
           </div>

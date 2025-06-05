@@ -23,13 +23,13 @@ export function ProductManager() {
   };
 
   return (
-    <div className="min-h-screen bg-background p-6">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen p-6 bg-background">
+      <div className="mx-auto max-w-7xl">
         <div className="mb-8">
           <div className="flex items-center gap-4 mb-4">
             <Link href="/admin">
               <Button variant="ghost" size="sm">
-                <ArrowLeft className="h-4 w-4 mr-2" />
+                <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Dashboard
               </Button>
             </Link>
@@ -37,7 +37,7 @@ export function ProductManager() {
           
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-foreground mb-2">
+              <h1 className="mb-2 text-3xl font-bold text-foreground">
                 Product Management
               </h1>
               <p className="text-muted-foreground">
@@ -46,7 +46,7 @@ export function ProductManager() {
             </div>
             
             <Button onClick={() => setShowProductForm(true)}>
-              <Plus className="h-4 w-4 mr-2" />
+              <Plus className="w-4 h-4 mr-2" />
               Add Product
             </Button>
           </div>
