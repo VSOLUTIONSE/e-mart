@@ -1,4 +1,4 @@
-import ProductManager from "@/pages/ProductManager";
+import ProductManager from "@/routes/ProductManager";
 
 
 

@@ -1,10 +1,11 @@
 import { Toaster } from "@/components/ui/toaster"
-import { CartProvider } from "@/providers/cart-provider"
-import { StoreProvider } from "@/providers/store-provider"
+
 import { FloatingChatWidget } from "@/components/storefront/floating-chat-widget"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import { StoreProvider } from "@/providers/store-provider"
+import { CartProvider } from "@/providers/cart-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
