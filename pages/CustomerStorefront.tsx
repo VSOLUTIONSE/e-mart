@@ -1,6 +1,4 @@
 import { useState } from 'react'
-
-
 import { ModernNavbar } from '../components/storefront/modern-navbar'
 import { Header } from '../components/storefront/header'
 import { ProductCatalog } from '../components/storefront/product-catalog'
