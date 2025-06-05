@@ -1,4 +1,5 @@
-import { AdminDashboard } from "@/pages/admin-dashboard";
+import AdminDashboard from "@/pages/admin-dashboard";
+
 
 
 export default function Admin() {

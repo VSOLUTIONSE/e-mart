@@ -7,7 +7,7 @@ import { useStore } from '../providers/store-provider';
 import Link from 'next/link';
 
 
-export function AdminDashboard() {
+export default function AdminDashboard() {
   const { products, settings } = useStore();
 
   const stats = [

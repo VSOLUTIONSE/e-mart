@@ -1,13 +1,16 @@
 import { useState } from 'react'
-import { ModernNavbar } from '@/components/storefront/modern-navbar'
-import { Header } from '@/components/storefront/header'
-import { ProductCatalog } from '@/components/storefront/product-catalog'
-import { Cart } from '@/components/storefront/cart'
-import { CheckoutModal } from '@/components/storefront/checkout-modal'
-import { Footer } from '@/components/storefront/footer'
-import { useCart } from '@/providers/cart-provider'
 
-export function CustomerStorefront() {
+
+import { ModernNavbar } from '../components/storefront/modern-navbar'
+import { Header } from '../components/storefront/header'
+import { ProductCatalog } from '../components/storefront/product-catalog'
+import { Cart } from '../components/storefront/cart'
+import { CheckoutModal } from '../components/storefront/checkout-modal'
+import { Footer } from '../components/storefront/footer'
+import { useCart } from '../providers/cart-provider'
+
+
+export default function CustomerStorefront() {
   const [isCartOpen, setIsCartOpen] = useState(false)
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')

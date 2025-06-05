@@ -8,7 +8,7 @@ import { ProductForm } from '../components/admin/product-form';
 import { ProductList } from '../components/admin/product-list';
 import { CategoryManager } from '../components/admin/category-manager';
 
-export function ProductManager() {
+export default function ProductManager() {
   const [showProductForm, setShowProductForm] = useState(false);
   const [editingProduct, setEditingProduct] = useState<string | null>(null);
 

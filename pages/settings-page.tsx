@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { StoreSettingsForm } from '../components/admin/store-settings-form';
 
 
-export function SettingsPage() {
+export default function SettingsPage() {
   return (
     <div className="min-h-screen p-6 bg-background">
       <div className="max-w-4xl mx-auto">
